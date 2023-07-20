@@ -1,0 +1,111 @@
+body{ 
+    background: linear-gradient(0deg, black 10%, rgb(59, 59, 59) 86% );
+    height: 120vh;
+    display: grid;
+    place-items: center;
+}
+.login {
+position: relative;
+color: aqua;
+padding: 20px;
+height: 200px;
+width: 360px;
+background: rgb(0, 0, 0); 
+text-align: center;
+border-radius: 20px;
+}
+.login::before,
+.login__head-mask{
+content: '';
+z-index: -1;
+display: block;
+position: absolute; 
+width: 600px;
+height: 530px;
+top: 50%;
+left: 50%;
+
+transform: translate(-50%,-50%);
+}
+.login::before{
+    background: url(./svg/psychology-2422442_1280.png);;
+}
+.login__head-mask{
+    display: grid;
+    place-items: center;
+    -webkit-mask: url(./svg/psychology-2422442_1280.png);;
+    mask: url(./svg/psychology-2422442_1280.png);;
+}
+.login__head-mask::before{
+    content: '';
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid aqua;
+    border-radius: 35%;
+animation: onda 5s infinite;
+}
+@keyframes onda{
+   0% {
+    transform: scale(1);
+   } 
+   50%{
+    transform: scale(8);
+   }
+   100%{
+    transform: scale(8);
+   }
+}
+
+
+
+
+
+
+/* login */
+
+  
+  .login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-container {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid chartreuse;
+    border-radius: 5px;
+  }
+  
+
+  
+
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgb(60, 60, 60);
+    color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:black;
+    color: chartreuse;
+  }
+  
